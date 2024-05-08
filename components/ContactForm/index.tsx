@@ -27,7 +27,7 @@ export const ContactForm = () => {
             <input
               type='text'
               id='name'
-              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 ${
+              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 text-black ${
                 errors.name ? 'border-red-500' : 'border-gray-300'
               }`}
               {...register('name', { required: 'O nome é obrigatório' })}
@@ -46,7 +46,7 @@ export const ContactForm = () => {
             <input
               type='email'
               id='email'
-              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 ${
+              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 text-black ${
                 errors.email ? 'border-red-500' : 'border-gray-300'
               }`}
               {...register('email', {
@@ -71,7 +71,7 @@ export const ContactForm = () => {
             <input
               type='text'
               id='company'
-              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 ${
+              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 text-black ${
                 errors.company ? 'border-red-500' : 'border-gray-300'
               }`}
               {...register('company', { required: 'A empresa é obrigatória' })}
@@ -91,7 +91,7 @@ export const ContactForm = () => {
               mask='(99) 99999-9999'
               maskPlaceholder={null}
               id='phone'
-              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 ${
+              className={`flex-1 border rounded-md px-3 py-2 bg-blue-50 text-black ${
                 errors.phone ? 'border-red-500' : 'border-gray-300'
               }`}
               {...register('phone', {
