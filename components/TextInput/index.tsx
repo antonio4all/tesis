@@ -1,6 +1,13 @@
 import React from 'react';
 
-const TextInput = ({ label, id, value, error, ...props }) => {
+interface TextInputProps {
+  label: string;
+  id: string;
+  value: string;
+  error: string;
+}
+
+const TextInput = ({ label, id, value, error, ...props }: TextInputProps) => {
   return (
     <div className='flex flex-col mb-4'>
       <div className='flex items-center'>
