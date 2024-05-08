@@ -2,14 +2,21 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import InputMask from 'react-input-mask';
 
+interface FormData {
+  name: string;
+  email: string;
+  company: string;
+  phone: string;
+}
+
 export const ContactForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+  } = useForm<FormData>();
 
-  const onSubmit = (data) => {
+  const onSubmit = (data: FormData) => {
     console.log('Formulário enviado:', data);
   };
 

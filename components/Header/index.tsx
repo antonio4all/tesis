@@ -7,7 +7,7 @@ const Header = () => {
     <header className='py-5 shadow-md'>
       <div className='container mx-auto flex items-center justify-between px-10'>
         <Link href='/'>
-          <Image src={logoTesis} width={150} height={150} alt='logo' />
+          <Image src={logoTesis} width={150} height={150} alt='logo_header' />
         </Link>
       </div>
     </header>

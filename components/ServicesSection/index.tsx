@@ -2,7 +2,7 @@ import React from 'react';
 import ProductEvaluationCard from '../ProductEvaluationCard';
 
 const ServicesSection = () => {
-  const services = [
+  const serviceDescriptions = [
     'Prover suporte para a avaliação de novos produtos e tecnologias',
     'Realizar processos de testes de novos produtos e tecnologias',
     'Orientar e assessorar na criação de novos produtos e tecnologias',
@@ -16,7 +16,7 @@ const ServicesSection = () => {
         Serviços
       </h2>
       <div className='grid gap-24 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-        {services.map((service, index) => (
+        {serviceDescriptions.map((service, index) => (
           <ProductEvaluationCard
             key={index}
             number={index + 1}
